@@ -1,0 +1,48 @@
+/*!
+ * /
+ *  *  *
+ *  *  *   *******************************************************************************
+ *  *  *   *  Copyright (c) Author: Igor Volotovskyi * 2024 * CZ IT-Design Studio GmbH. *
+ *  *  *   *******************************************************************************
+ *  *  *
+ * /
+ */
+
+.partners {
+  @apply flex flex-col justify-center py-4 md:py-16 px-4 md:px-20 bg-white border-2 border-b-slate-200 border-t-teal-100;
+}
+
+.title {
+  @apply text-center mt-5 md:mt-10 text-3xl;
+}
+
+.embla {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.partnersLogo {
+  margin: auto;
+  height: 80px;
+}
+
+.logos {
+  flex-direction: row;
+  padding: 60px 0;
+  background: white;
+}
