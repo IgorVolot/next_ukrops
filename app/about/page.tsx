@@ -10,10 +10,12 @@
 
 
 import React from 'react';
+import AboutHero from "@/components/ui/about/aboutHero/AboutHero";
 
 const About:React.FC = () => {
     return (
         <div>
+            <AboutHero/>
 
         </div>
     );

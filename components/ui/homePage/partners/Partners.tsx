@@ -22,7 +22,6 @@ import Image from "next/image";
 import styles from './Partners.module.scss'
 
 const Partners: FC = () => {
-
     const partners = [
         { src: brCouncil, alt: "British Council" },
         { src: equalHousing, alt: "Equal Housing Opportunity" },

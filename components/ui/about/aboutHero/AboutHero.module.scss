@@ -1,0 +1,143 @@
+/*!
+ * /
+ *  *  *
+ *  *  *   *******************************************************************************
+ *  *  *   *  Copyright (c) Author: Igor Volotovskyi * 2024 * CZ IT-Design Studio GmbH. *
+ *  *  *   *******************************************************************************
+ *  *  *
+ * /
+ */
+
+
+.mainSection {
+  @apply mx-auto max-w-2xl sm:pb-6 lg:max-w-full;
+
+
+  .mainContainer {
+    @apply mb-8 flex flex-wrap justify-between md:mb-16;
+  }
+
+  .aboutHeroLeft {
+    @apply md:mt-0 mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/2 lg:pb-24 lg:pt-20;
+    position: absolute;
+
+    .imgSection {
+      @apply flex flex-auto pl-8 md:pl-44;
+      position: relative;
+
+      .img1 {
+        position: absolute;
+        border-top-left-radius: 90px;
+        top: 80px;
+        margin-left: 10px;
+      }
+
+      .img2 {
+        position: absolute;
+        border-radius: 15px;
+        top: 120px;
+        margin-left: 240px;
+      }
+
+      .img3 {
+        position: absolute;
+        border-bottom-left-radius: 50px;
+        top: 320px;
+        margin-left: 145px;
+      }
+
+      .img4 {
+        position: absolute;
+        border-bottom-left-radius: 40px;
+        border-top-right-radius: 40px;
+        top: 420px;
+        margin-left: -24px;
+      }
+
+      .img5 {
+        position: absolute;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        top: 200px;
+        margin-left: 260px;
+      }
+
+      .img6 {
+        position: absolute;
+        border-bottom-right-radius: 50px;
+        top: 480px;
+        margin-left: 220px;
+      }
+
+      .img7 {
+        position: absolute;
+        border-top-right-radius: 40px;
+        top: 30px;
+        margin-left: 380px;
+      }
+
+      .img8 {
+        position: absolute;
+        border-bottom-right-radius: 70px;
+        top: 400px;
+        margin-left: 400px;
+      }
+
+    }
+  }
+}
+
+@mixin img-hover-style($width, $baseColor: rgba(34, 103, 96, 0.58), $fadeFactor: 0.7) {
+  background-color: ghostwhite;
+  transform-style: preserve-3d;
+  transition: ease-in-out 0.6s;
+  width: $width;
+  border: 1.5px groove rgba(25, 75, 73, 0.22);
+  $fadedColor: rgba(red($baseColor), green($baseColor), blue($baseColor), alpha($baseColor) * (1-$fadeFactor));
+  box-shadow: 10px 10px 6px $fadedColor;
+}
+
+.img1:hover {
+  @include img-hover-style(60%);
+}
+
+.img2:hover {
+  @include img-hover-style(40%);
+}
+
+.img3:hover {
+  @include img-hover-style(25%);
+}
+
+.img4:hover {
+  @include img-hover-style(30%);
+}
+
+.img5:hover {
+  @include img-hover-style(50%);
+}
+
+.img6:hover {
+  @include img-hover-style(60%);
+}
+
+.img7:hover {
+  @include img-hover-style(30%);
+}
+
+.img8:hover {
+  @include img-hover-style(60%);
+}
+
+.aboutHeroRight {
+  @apply z-10  mb-12 flex w-full md:mb-16 lg:w-1/2 ;
+
+
+  .textBlock {
+    //position: absolute;
+    //top: 10rem;
+    //right: 10rem;
+  }
+
+}
+

@@ -47,9 +47,13 @@ const SupportPlans: React.FC = () => {
                 <div className={`${styles.container} bg-emerald-50`}>
                     <h5 className={`${styles.title} text-gray-700`}>Pro Support</h5>
                     <div className={styles.costBlock}>
-                        <span className="text-3xl font-semibold">up to 1000</span>
+                        <span className="text-3xl font-semibold">from 1</span>
                         <span className="text-2xl font-extrabold tracking-tight">£</span>
-                        <span className="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+                        <span className="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400 mb-4">/per time</span>
+                    </div>
+                    <div className={styles.costBlock}>
+                        <span className="text-3xl font-semibold">or any regular</span>
+                        <span className="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/weak/month/year</span>
                     </div>
                     <div
                         className="flex items-baseline mt-4 border-b-2 border-b-slate-200 text-gray-500 dark:text-white">
@@ -63,7 +67,7 @@ const SupportPlans: React.FC = () => {
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                             </svg>
-                            <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">2 team members</span>
+                            <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">all payments are secure</span>
                         </li>
                         <li className="flex">
                             <svg className="flex-shrink-0 w-4 h-4 text-emerald-400 dark:text-blue-500"
@@ -72,7 +76,7 @@ const SupportPlans: React.FC = () => {
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                             </svg>
-                            <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">20GB Cloud storage</span>
+                            <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">all payments are easy</span>
                         </li>
                         <li className="flex">
                             <svg className="flex-shrink-0 w-4 h-4 text-emerald-400 dark:text-blue-500"
@@ -81,7 +85,7 @@ const SupportPlans: React.FC = () => {
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                             </svg>
-                            <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Integration help</span>
+                            <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">you can choose any plan</span>
                         </li>
                         <li className="flex line-through decoration-gray-500">
                             <svg className="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500" aria-hidden="true"
@@ -89,7 +93,7 @@ const SupportPlans: React.FC = () => {
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                             </svg>
-                            <span className="text-base font-normal leading-tight text-gray-500 ms-3">Sketch Files</span>
+                            <span className="text-base font-normal leading-tight text-gray-500 ms-3">Scam</span>
                         </li>
                         <li className="flex line-through decoration-gray-500">
                             <svg className="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500" aria-hidden="true"
@@ -97,7 +101,7 @@ const SupportPlans: React.FC = () => {
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                             </svg>
-                            <span className="text-base font-normal leading-tight text-gray-500 ms-3">API Access</span>
+                            <span className="text-base font-normal leading-tight text-gray-500 ms-3">Fraud</span>
                         </li>
                         <li className="flex line-through decoration-gray-500">
                             <svg className="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500" aria-hidden="true"
@@ -106,7 +110,7 @@ const SupportPlans: React.FC = () => {
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                             </svg>
                             <span
-                                className="text-base font-normal leading-tight text-gray-500 ms-3">Complete documentation</span>
+                                className="text-base font-normal leading-tight text-gray-500 ms-3">Swindle</span>
                         </li>
                         <li className="flex line-through decoration-gray-500">
                             <svg className="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500" aria-hidden="true"
@@ -114,7 +118,7 @@ const SupportPlans: React.FC = () => {
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                             </svg>
-                            <span className="text-base font-normal leading-tight text-gray-500 ms-3">24×7 phone & email support</span>
+                            <span className="text-base font-normal leading-tight text-gray-500 ms-3">Spam</span>
                         </li>
                     </ul>
                     <Button asChild className={styles.button}>
@@ -126,7 +130,7 @@ const SupportPlans: React.FC = () => {
                 <div className={`${styles.container} bg-red-50`}>
                     <h5 className={`${styles.title} text-black`}>Enterprise Solutions</h5>
                     <div className={styles.costBlock}>
-                        <p className='text-slate-800'>Contact us if you would like to provide customized support
+                        <p className="text-slate-800">Contact us if you would like to provide customized support
                             packages, as well as for companies wishing to make meaningful donations.</p>
                     </div>
                     <div

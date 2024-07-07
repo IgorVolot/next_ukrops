@@ -33,7 +33,8 @@
 .embla__slide {
   position: relative;
   flex: 0 0 auto;
-  width: 100%;
+  width: calc(100% / 3);
+  box-sizing: border-box;
 }
 
 .partnersLogo {
@@ -42,6 +43,7 @@
 }
 
 .logos {
+  display: flex;
   flex-direction: row;
   padding: 60px 0;
   background: white;

@@ -15,6 +15,7 @@ import Empower from "@/components/ui/homePage/empower/Empower";
 import NeedHelp from "@/components/ui/homePage/needHelp/NeedHelp";
 import VoicesOfImpact from "@/components/ui/homePage/voices/VoicesOfImpact";
 import SupportPlans from "@/components/ui/homePage/supportPlans/SupportPlans";
+import FAQ from "@/components/ui/homePage/faq/FAQ";
 
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
           <NeedHelp/>
           <VoicesOfImpact/>
           <SupportPlans/>
+          <FAQ/>
       </div>
   );
 }
