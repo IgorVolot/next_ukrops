@@ -9,7 +9,6 @@
  */
 
 
-.footer {
-  @apply flex flex-col justify-center items-center border border-t-slate-200;
-  background-color: #8CDAEC;
+.mainContainer {
+  @apply w-full mt-8 md:mt-16;
 }

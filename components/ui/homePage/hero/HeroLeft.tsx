@@ -13,7 +13,6 @@ import React, {FC, useState} from "react";
 import Link from "next/link";
 import {Button} from "@/components/ui/button/button";
 import styles from './Hero.module.scss'
-import TitleTrail from "@/components/ui/homePage/hero/Trail";
 
 
 const HeroLeft: FC = () => {
