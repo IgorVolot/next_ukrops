@@ -37,7 +37,7 @@ const Navbar = () => {
                             key={id}
                             className={styles.linksDesktop}
                         >
-                            <Link href={link}>{link}</Link>
+                            <Link href={"/" + link}>{link}</Link>
                         </li>
                     ))}
                 </ul>

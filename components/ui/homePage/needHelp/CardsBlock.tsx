@@ -26,7 +26,10 @@ const CardsBlock: React.FC = () => {
                     <Image src={img1} alt="help" className={`${styles.img} z-0`}/>
                     <div className={`${styles.cardBody} z-1`}>
                         <div className="card-body-top  p-2">
-                            <button className={styles.button1} disabled={true}>First Aid</button>
+                            <span
+                                className="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300"
+                            >First Aid
+                            </span>
                             <h3 className="mt-8">Help the Ukrainians to stay alive</h3>
                         </div>
                         <div className="card-body-center">
@@ -61,7 +64,10 @@ const CardsBlock: React.FC = () => {
                     <Image src={img2} alt="help" className={`${styles.img} z-0`}/>
                     <div className={`${styles.cardBody} z-10`}>
                         <div className="card-body-top  p-2">
-                            <button className={styles.button2} disabled={true}>Emergency Kits</button>
+                            <span
+                                className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"
+                            >Emergency Kits
+                            </span>
                             <h3 className="mt-8">Save solders life</h3>
                         </div>
                         <div className="card-body-center">
@@ -96,7 +102,10 @@ const CardsBlock: React.FC = () => {
                     <Image src={img3} alt="help" className={`${styles.img} z-0`}/>
                     <div className={`${styles.cardBody} z-10`}>
                         <div className="card-body-top  p-2">
-                            <button className={styles.button3} disabled={true}>Special medical equipment</button>
+                            <span
+                                className="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-pink-900 dark:text-pink-300"
+                            >Special medical equipment
+                            </span>
                             <h3 className="mt-8">Help save each life</h3>
                         </div>
                         <div className="card-body-center">
@@ -131,7 +140,10 @@ const CardsBlock: React.FC = () => {
                     <Image src={img4} alt="help" className={`${styles.img} z-0`}/>
                     <div className={`${styles.cardBody} z-10`}>
                         <div className="card-body-top  p-2">
-                            <button className={styles.button4} disabled={true}>Education</button>
+                            <span
+                                className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300"
+                            >Education
+                            </span>
                             <h3 className="mt-8">Make them better trained</h3>
                         </div>
                         <div className="card-body-center">

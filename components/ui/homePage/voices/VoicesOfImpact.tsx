@@ -32,7 +32,14 @@ const VoicesOfImpact: React.FC = () => {
                     <blockquote className={styles.blockquote}>
                         <h3 className={styles.title}>Lorem ipsum dolor sit amet, quo ei simul congue exerci</h3>
                         <p className={styles.quote}>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                            admodum perfecto mnesarchum, vim ea mazim fierent detracto.</p>
+                            admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+
+                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                            admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+
+                            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                            admodum perfecto mnesarchum, vim ea mazim fierent detracto.
+                        </p>
                     </blockquote>
                     <figcaption className={styles.imgBlock}>
                         <Image className={styles.img}

@@ -10,11 +10,11 @@
 
 
 import React from 'react';
-import styles from './Donation.module.scss';
+import styles from './DonateUs.module.scss';
 import Link from "next/link";
 import {Button} from "@/components/ui/button/button";
 
-const Donation = () => {
+const DonateUs = () => {
     return (
         <section className={styles.mainContainer}>
             <div className={styles.textBlock}>
@@ -35,7 +35,7 @@ const Donation = () => {
                     starting small, but we are aiming big!
                 </p>
                 <Button asChild className={styles.button}>
-                    <Link href="/login">Read more</Link>
+                    <Link href="/about/donation">Read more</Link>
                 </Button>
             </div>
             <div className={styles.mediaBlock}>
@@ -47,4 +47,4 @@ const Donation = () => {
     );
 };
 
-export default Donation;
+export default DonateUs;

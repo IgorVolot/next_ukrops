@@ -13,7 +13,7 @@ import React from 'react';
 import AboutHero from "@/components/ui/about/aboutHero/AboutHero";
 import AboutUs from "@/components/ui/about/aboutUs/AboutUs";
 import OurActivity from "@/components/ui/about/ourActivity/OurActivity";
-import Donation from "@/components/ui/about/donation/Donation";
+import DonateUs from "@/components/ui/about/donateUs/DonateUs";
 import BottomBanner from "@/components/ui/about/bottomBanner/BottomBanner";
 
 const About: React.FC = () => {
@@ -22,7 +22,7 @@ const About: React.FC = () => {
             <AboutHero/>
             <AboutUs/>
             <OurActivity/>
-            <Donation/>
+            <DonateUs/>
             <BottomBanner/>
         </div>
     );
