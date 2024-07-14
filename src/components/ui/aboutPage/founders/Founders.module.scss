@@ -1,0 +1,79 @@
+/*/
+ *  *
+ *  *   *******************************************************************************
+ *  *   *  Copyright (c) Author: Igor Volotovskyi * 2024 * CZ IT-Design Studio GmbH. *
+ *  *   *******************************************************************************
+ *  *
+/*/
+
+.mainContainer {
+  @apply bg-white py-8 md:py-16 dark:bg-sky-800;
+
+  .mainTitle {
+    @apply py-4 md:py-8 text-center text-3xl leading-tight text-gray-900 dark:text-white;
+  }
+
+  .cardBlock {
+    @apply flex flex-col md:flex-row py-8 md:py-16 justify-center;
+
+    .card {
+      @apply max-w-sm bg-white px-6 md:mx-6 border border-gray-200 rounded-xl dark:bg-gray-800 dark:border-gray-700;
+      box-shadow: 10px 10px 6px rgba(25, 75, 73, 0.22);
+
+      .title {
+        @apply pb-0 text-xl tracking-tight text-slate-700 dark:text-gray-200;
+      }
+
+      .subTitle {
+        @apply text-slate-600 ml-4 md:ml-12 mt-0.5 pt-0;
+        font-family: "Academy Engraved LET", sans-serif;
+      }
+
+      .article {
+        @apply mb-3 mt-2 md:mt-4 font-normal text-gray-700 dark:text-gray-400 max-h-60 overflow-scroll;
+
+        .text {
+          @apply my-2;
+        }
+      }
+
+      .signature {
+        @apply mt-3 ml-1;
+
+        color: #205691;
+      }
+
+      #leoSignature {
+        font-family: 'Argine', sans-serif;
+        font-size: 2.5em;
+        padding: 2rem;
+      }
+
+      #annaSignature {
+        font-family: "Kastria", sans-serif;
+        font-size: 2em;
+        padding: 2rem;
+      }
+
+      #justasSignature {
+        font-family: "Hoper Begin", sans-serif;
+        font-size: 2em;
+        padding: 2rem;
+      }
+
+      .img {
+        @apply pt-6 mx-auto;
+      }
+
+      .link {
+        text-decoration: none;
+        color: #21a9b6;
+      }
+
+      .link:hover {
+        color: maroon;
+        text-decoration: underline;
+      }
+    }
+  }
+}

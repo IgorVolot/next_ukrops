@@ -1,0 +1,61 @@
+/*/
+ *  *
+ *  *   *******************************************************************************
+ *  *   *  Copyright (c) Author: Igor Volotovskyi * 2024 * CZ IT-Design Studio GmbH. *
+ *  *   *******************************************************************************
+ *  *
+/*/
+
+
+.mainTitle {
+  @apply text-2xl text-center py-4 md:py-16 text-gray-900;
+}
+
+.mainContainer {
+  @apply grid my-4 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:my-10 md:grid-cols-2 md:mx-20 bg-white dark:bg-gray-800;
+
+  .card {
+    @apply flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700;
+
+    .blockquote {
+      @apply max-w-2xl mx-auto mb-4 max-h-24 overflow-scroll text-gray-500 lg:mb-8 dark:text-gray-400;
+
+      .title {
+        @apply text-lg font-semibold text-gray-900 dark:text-white;
+      }
+
+      .quote {
+        @apply my-4;
+      }
+    }
+
+    .imgBlock {
+      @apply flex items-center justify-center;
+
+      .img {
+        @apply rounded-full w-20 h-20;
+      }
+
+      .name {
+        @apply space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3;
+      }
+
+      .position {
+        @apply text-sm text-gray-500 dark:text-gray-400;
+      }
+    }
+  }
+
+  .card:hover {
+    transform-style: preserve-3d;
+    transition: ease-in-out 0.6s;
+    scale: 1.15;
+    border: 1px groove rgba(25, 75, 73, 0.22);
+    border-radius: 10px;
+    $color: rgba(34, 103, 96, 0.58);
+    $fade: 0.7;
+    $new-color: rgba(red($color), green($color), blue($color), alpha($color) * (1-$fade));
+    box-shadow: 10px 10px 6px $new-color;
+  }
+}
+

@@ -1,0 +1,62 @@
+/*/
+ *  *
+ *  *   *******************************************************************************
+ *  *   *  Copyright (c) Author: Igor Volotovskyi * 2024 * CZ IT-Design Studio GmbH. *
+ *  *   *******************************************************************************
+ *  *
+/*/
+
+.errorContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.errorContent {
+    text-align: center;
+}
+
+
+
+#handboy {
+    animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 98% 98%;
+    transform-box: fill-box;
+}
+
+#girllight {
+    animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 0 97%;
+    transform-box: fill-box;
+}
+
+#hairgirl {
+    animation: swinghair ease-in-out 1.3s infinite alternate;
+    transform-origin: 60% 0;
+    transform-box: fill-box;
+}
+
+#zero {
+    transform-origin: center;
+    transform-box: fill-box;
+    perspective: 1000px;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes swinghair {
+    0% {
+        transform: rotate(6deg);
+    }
+    100% {
+        transform: rotate(-6deg);
+    }
+}

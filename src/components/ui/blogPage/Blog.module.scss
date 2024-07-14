@@ -1,0 +1,71 @@
+/*/
+ *  *
+ *  *   *******************************************************************************
+ *  *   *  Copyright (c) Author: Igor Volotovskyi * 2024 * CZ IT-Design Studio GmbH. *
+ *  *   *******************************************************************************
+ *  *
+/*/
+
+  .mainTitle {
+    @apply text-center text-2xl md:text-5xl px-6 py-8;
+  }
+
+.article {
+  @apply block mt-4 md:my-16 mx-auto w-full max-w-2xl border-b border-slate-900;
+
+  .articleTitle {
+    @apply mb-4 text-2xl font-bold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white;
+  }
+
+      .mediaBlock {
+        @apply py-4 md:p-4 max-w-64 md:max-w-xl;
+      }
+
+      .text {
+        @apply mb-4 pr-4 text-base font-normal text-gray-500 dark:text-gray-400;
+      }
+
+      .img {
+        @apply pr-4 py-4;
+      }
+}
+
+.button {
+  @apply mt-2 text-sm md:text-lg md:font-medium md:w-[150px] px-8 py-2 md:uppercase rounded-xl border border-slate-500;
+  background-color: #8CDAEC;
+}
+
+.button:hover {
+  @apply bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600;
+  transform-style: preserve-3d;
+  transition: ease-in-out 0.6s;
+  scale: 1.3;
+  border: 1.5px groove rgba(25, 75, 73, 0.22);
+  $color: rgba(34, 103, 96, 0.58);
+  $fade: 0.7;
+  $new-color: rgba(red($color), green($color), blue($color), alpha($color) * (1-$fade));
+  box-shadow: 10px 10px 6px $new-color;
+}
+
+#commentsButton {
+  @apply text-black bg-transparent uppercase border-none hover:bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300 text-sm md:text-lg md:font-medium rounded-xl px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+
+.modalContainer {
+  @apply mx-3 max-w-3xl mt-[87px] mb-52 rounded-xl bg-white;
+}
+
+.commentsArticle {
+  @apply p-6 mb-6 text-base shadow-2xl shadow-slate-300 bg-white rounded-lg dark:bg-gray-900;
+}
+
+  .link {
+    @apply mt-4 font-medium uppercase text-gray-700 hover:underline hover:text-teal-600 dark:text-white;
+    text-decoration: none;
+    color: #21a9b6;
+  }
+
+  .link:hover {
+    color: maroon;
+    text-decoration: underline;
+  }
