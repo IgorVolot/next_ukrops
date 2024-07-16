@@ -6,16 +6,14 @@
  *  *
 /*/
 
+.mainContainer {
+  @apply flex md:flex-row;
 
-import React from 'react';
-import ContactPage from "@/components/ui/contactPage/ContactPage";
+  .leftContainer {
+    @apply invisible md:visible md:w-1/2 bg-center bg-no-repeat bg-[url('/contactPage/img.jpeg')] bg-gray-800 bg-blend-multiply;
+  }
 
-const Contact: React.FC = () => {
-    return (
-        <div>
-            <ContactPage/>
-        </div>
-    );
-};
-
-export default Contact;
+  .rightContainer {
+    @apply w-full md:w-1/2 bg-slate-100 dark:bg-gray-900;
+  }
+}

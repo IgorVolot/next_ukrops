@@ -6,21 +6,27 @@
  *  *
 /*/
 
-
+'use client'
 import React from 'react';
-import logo from '@/public/logo/icon_ukrops.png'
+import logo from '../../../../public/logo/icon_ukrops.png'
 import Image from "next/image";
+import {Button, useDisclosure} from "@nextui-org/react";
+import Link from "next/link";
+import AppModal from "@/components/ui/AppModal";
 
-const RegisterPage:React.FC = () => {
+const SignupPage: React.FC = () => {
+    const {isOpen, onOpen, onClose} = useDisclosure();
     return (
         <>
-            <section className="bg-center bg-no-repeat bg-[url('/registerPage/Natalia-1.jpeg')] bg-gray-700 bg-blend-multiply">
+            <section
+                className="bg-center bg-no-repeat bg-[url('/registerPage/Natalia-1.jpeg')] bg-gray-700 bg-blend-multiply">
                 <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-                    <a href="#" className="flex items-center mb-6 text-5xl font-semibold text-gray-400 dark:text-white">
+                    <Link href="/home"
+                          className="flex items-center mb-6 text-5xl font-semibold text-gray-400 dark:text-white">
                         <Image className="w-16 h-16 mr-4"
-                             src={logo} alt="logo"/>
+                               src={logo} alt="logo"/>
                         UKROPS Medical
-                    </a>
+                    </Link>
                     <div
                         className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -70,11 +76,16 @@ const RegisterPage:React.FC = () => {
                                     an account
                                 </button>
                                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                                    Already have an account? <a href="#"
-                                                                className="font-medium text-primary-600 hover:underline dark:text-primary-500">Login
-                                    here</a>
+                                    Already have an account?
+                                    <Link href="/login"
+                                       className="font-medium ml-2 text-primary-600 hover:underline dark:text-primary-500"
+                                       type='button'
+                                       onClick={onOpen}
+                                    >Login here
+                                    </Link>
                                 </p>
                             </form>
+                            {/*<AppModal isOpen={isOpen} onClose={onClose}/>*/}
                         </div>
                     </div>
                 </div>
@@ -83,4 +94,4 @@ const RegisterPage:React.FC = () => {
     );
 };
 
-export default RegisterPage;
+export default SignupPage;

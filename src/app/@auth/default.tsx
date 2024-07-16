@@ -7,15 +7,6 @@
 /*/
 
 
-import React from 'react';
-import ContactPage from "@/components/ui/contactPage/ContactPage";
-
-const Contact: React.FC = () => {
-    return (
-        <div>
-            <ContactPage/>
-        </div>
-    );
-};
-
-export default Contact;
+export default function Default() {
+    return null
+}

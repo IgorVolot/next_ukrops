@@ -41,8 +41,11 @@ const HeroLeft: FC = () => {
             <p className={styles.text}>
                 Join our mission to provide critical medical aid
             </p>
-            <Button className={styles.button} >
-                <Link href="/login" onClick={() => setOpen(!open)}>Get Involved</Link>
+            <Button className={`${styles.button} uppercase`} >
+                <Link href="/signup" onClick={() => setOpen(!open)}>
+                    get involved
+                    {/*<small className='pl-4 lowercase align-top font-light'>(sign up)</small>*/}
+                </Link>
             </Button>
         </div>
     );
