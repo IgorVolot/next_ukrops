@@ -1,10 +1,12 @@
-/*/
- *  *
- *  *   *******************************************************************************
- *  *   *  Copyright (c) Author: Igor Volotovskyi * 2024 * CZ IT-Design Studio GmbH. *
- *  *   *******************************************************************************
- *  *
-/*/
+/*
+ * /
+ *  *  *  *
+ *  *  *  *   *******************************************************************************
+ *  *  *  *   *  Copyright (c) Author: Igor Volotovskyi * 2024 * CZ IT-Design Studio GmbH. *
+ *  *  *  *   *******************************************************************************
+ *  *  *  *
+ *  /
+ */
 
 
 import React from "react";
@@ -22,7 +24,7 @@ const AccordionItem: React.FC<{
             <button
                 type="button"
                 onClick={toggleOpen}
-                className={`${styles.buttonLine}`}
+                className="flex items-center bg-slate-100 justify-between w-full p-5 font-medium rtl:text-right text-slate-700 border border-b-0 border-gray-200 focus:ring-2 focus:ring-slate-200 dark:focus:ring-cyan-800 dark:border-gray-700 dark:text-gray-400 hover:bg-cyan-100 dark:hover:bg-gray-800 gap-3;"
                 data-accordion-target={`#${id}-body`}
                 aria-expanded={isOpen}
                 aria-controls={`${id}-body`}>
@@ -43,7 +45,7 @@ const AccordionItem: React.FC<{
             </button>
         </h2>
         <div id={`${id}-body`} className={isOpen ? "" : "hidden"} aria-labelledby={`${id}-heading`}>
-            <div className={styles.answerBlock}>
+            <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900;">
                 {answer}
             </div>
         </div>

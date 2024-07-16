@@ -10,7 +10,7 @@
 import React, {useState} from 'react';
 import styles from './FAQ.module.scss';
 import Link from "next/link";
-import AccordionItem from './AccordionItem'
+import AccordionItem from '../../AccordionItem'
 
 interface ItemsOpen {
     [key: string]: boolean;

@@ -21,28 +21,31 @@ const LoginPage:React.FC = () => {
         <section className=" p-4 md:p-20 bg-center bg-no-repeat bg-[url('/loginPage/busyDay.jpg')] bg-cyan-800 bg-blend-multiply">
             <div className='flex flex-row items-center justify-center mb-4'>
                 <Link href="/home"
-                      className="flex mb-6 text-3xl md:text-6xl font-semibold text-gray-400 dark:text-white">
+                      className="flex mb-6 text-3xl md:text-6xl font-semibold text-gray-400">
                     <Image className="w-10 h-10 md:w-16 md:h-16 mr-4"
                            src={logo} alt="logo"/>
                     UKROPS Medical
                 </Link>
             </div>
 
-            <form className="max-w-sm lg:max-w-xl p-4 lg:p-20 border border-slate-300 rounded-xl mx-auto">
+            <form className="max-w-sm px-8 py-8 border border-slate-300 rounded-xl mx-auto">
                 <div className="mb-5">
-                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-white dark:text-gray-900 ">Your
+                    <h1 className="text-xl font-bold pb-8 leading-tight tracking-tight text-slate-300 md:text-2xl dark:text-white">
+                        Create an account
+                    </h1>
+                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-white ">Your
                         email</label>
                     <input type="email" id="email"
-                           className="bg-gray-50 border border-gray-300 dark:text-white text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                           className="bg-gray-50 border border-gray-300 dark:text-white text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                            placeholder="your.name@email.com" required/>
                 </div>
                 <div className="relative mb-5">
-                    <label htmlFor="password" className="block mb-2 text-sm font-medium text-white dark:text-gray-900">Your
+                    <label htmlFor="password" className="block mb-2 text-sm font-medium text-white">Your
                         password</label>
                     <input type={showPassword ? "text" : "password"}
                            id="password"
-                           placeholder="Enter password"
-                           className="bg-gray-50 border border-gray-300 dark:text-white text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                           placeholder="••••••••"
+                           className="bg-gray-50 border border-gray-300 dark:text-white text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                            required/>
                     <button className="absolute text-slate-400 right-4 top-12 transform -translate-y-1/2"
                             onClick={() => setShowPassword(!showPassword)}>

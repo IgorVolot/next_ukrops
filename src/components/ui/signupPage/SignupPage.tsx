@@ -7,67 +7,84 @@
 /*/
 
 'use client'
-import React from 'react';
+import React, {useState} from 'react';
 import logo from '../../../../public/logo/icon_ukrops.png'
 import Image from "next/image";
 import {useDisclosure} from "@nextui-org/react";
 import Link from "next/link";
+import {FiEye, FiEyeOff} from "react-icons/fi";
 
 const SignupPage: React.FC = () => {
+    const [showPassword, setShowPassword] = useState(false);
     const {isOpen, onOpen, onClose} = useDisclosure();
     return (
         <>
             <section
-                className="bg-center bg-no-repeat bg-[url('/registerPage/Natalia-1.jpeg')] bg-gray-700 bg-blend-multiply">
+                className="bg-center bg-no-repeat bg-[url('/registerPage/img1.jpg')] bg-cyan-800 bg-blend-multiply">
                 <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
                     <Link href="/home"
-                          className="flex items-center mb-6 text-5xl font-semibold text-gray-400 dark:text-white">
+                          className="flex items-center mb-6 text-5xl font-semibold text-gray-400">
                         <Image className="w-16 h-16 mr-4"
                                src={logo} alt="logo"/>
                         UKROPS Medical
                     </Link>
                     <div
-                        className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+                        className="w-full rounded-xl shadow border border-slate-300 md:mt-0 sm:max-w-md xl:p-0">
                         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-                            <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                            <h1 className="text-xl font-bold leading-tight tracking-tight text-slate-300 md:text-2xl dark:text-white">
                                 Create an account
                             </h1>
                             <form className="space-y-4 md:space-y-6" action="#">
                                 <div>
                                     <label htmlFor="email"
-                                           className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                           className="block mb-2 text-sm font-medium text-slate-300">Your
                                         email</label>
                                     <input type="email" name="email" id="email"
-                                           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                                            placeholder="name@company.com" required={true}/>
                                 </div>
-                                <div>
+                                <div className="relative mb-5">
                                     <label htmlFor="password"
-                                           className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                                    <input type="password" name="password" id="password" placeholder="••••••••"
-                                           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                           required={true}/>
-                                </div>
-                                <div>
-                                    <label htmlFor="confirm-password"
-                                           className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm
-                                        password</label>
-                                    <input type="confirm-password" name="confirm-password" id="confirm-password"
+                                           className="block mb-2 text-sm font-medium text-slate-300">Password</label>
+                                    <input type={showPassword ? "text" : "password"}
+                                           name="password"
+                                           id="password"
                                            placeholder="••••••••"
-                                           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                           required={true}/>
+                                           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                           required/>
+                                    <button
+                                        className="absolute text-slate-400 right-4 top-12 transform -translate-y-1/2"
+                                        onClick={() => setShowPassword(!showPassword)}>
+                                        {showPassword ? <FiEyeOff/> : <FiEye/>}
+                                    </button>
+                                </div>
+                                <div className="relative mb-5">
+                                    <label htmlFor="confirm-password"
+                                           className="block mb-2 text-sm font-medium text-slate-300">Confirm
+                                        password</label>
+                                    <input type={showPassword ? "text" : "password"}
+                                           name="confirm-password"
+                                           id="confirm-password"
+                                           placeholder="••••••••"
+                                           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                           required/>
+                                    <button
+                                        className="absolute text-slate-400 right-4 top-12 transform -translate-y-1/2"
+                                        onClick={() => setShowPassword(!showPassword)}>
+                                        {showPassword ? <FiEyeOff/> : <FiEye/>}
+                                    </button>
                                 </div>
                                 <div className="flex items-start">
                                     <div className="flex items-center h-5">
                                         <input id="terms" aria-describedby="terms" type="checkbox"
-                                               className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
-                                               required={true}/>
+                                               className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300"
+                                               required/>
                                     </div>
                                     <div className="ml-3 text-sm">
-                                        <label htmlFor="terms" className="font-light text-gray-500 dark:text-gray-300">
+                                        <label htmlFor="terms" className="font-light text-slate-300">
                                             I accept the
                                             <Link
-                                                className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                                                className="font-medium text-primary-600 hover:underline"
                                                 href="/term"
                                             > Terms and Conditions
                                             </Link>
@@ -75,13 +92,17 @@ const SignupPage: React.FC = () => {
                                     </div>
                                 </div>
                                 <button type="submit"
-                                        className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Create
-                                    an account
+                                        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Create an account
                                 </button>
-                                <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                                {/*<button type="submit"*/}
+                                {/*        className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Create*/}
+                                {/*    an account*/}
+                                {/*</button>*/}
+                                <p className="text-sm font-light text-slate-300">
                                     Already have an account?
                                     <Link href="/login"
-                                          className="font-medium ml-2 text-primary-600 hover:underline dark:text-primary-500"
+                                          className="font-medium ml-2 text-primary-600 hover:underline"
                                           type="button"
                                           onClick={onOpen}
                                     >Login here

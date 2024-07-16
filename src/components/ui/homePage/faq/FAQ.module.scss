@@ -20,33 +20,26 @@
 
   .faqContainer {
     @apply bg-white rounded-t-xl shadow-md;
-
-    .buttonLine {
-      @apply flex items-center bg-slate-100 justify-between w-full p-5 font-medium rtl:text-right text-slate-700 border border-b-0 border-gray-200 focus:ring-2 focus:ring-slate-200 dark:focus:ring-cyan-800 dark:border-gray-700 dark:text-gray-400 hover:bg-cyan-100 dark:hover:bg-gray-800 gap-3;
-    }
   }
 
   .faqContainerActive {
     @apply bg-blue-100 dark:bg-gray-800 text-cyan-600 dark:text-white;
   }
 
-  .answerBlock {
-    @apply p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900;
-
-    .answer {
-      @apply mb-2 text-gray-500 dark:text-gray-400;
-    }
-
-    .link {
-      text-decoration: none;
-      color: #21a9b6;
-    }
-
-    .link:hover {
-      color: maroon;
-      text-decoration: underline;
-    }
+  .answer {
+    @apply mb-2 text-gray-500 dark:text-gray-400;
   }
+
+  .link {
+    text-decoration: none;
+    color: #21a9b6;
+  }
+
+  .link:hover {
+    color: maroon;
+    text-decoration: underline;
+  }
+
 
 }
 

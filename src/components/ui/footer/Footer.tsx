@@ -39,7 +39,7 @@ class Footer extends Component {
 
                                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                     <li className="mb-4">
-                                        <Link href="/aboutPage" className="hover:underline">About</Link>
+                                        <Link href="/about" className="hover:underline">About</Link>
                                     </li>
                                     <li>
                                         <Link href="/blog" className="hover:underline">Blog</Link>
