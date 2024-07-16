@@ -17,10 +17,20 @@ import img1 from "../../../../public/blogPage/img1.jpeg";
 import ModalComponent2 from "@/components/ui/blogPage/modals/ModalComponent2";
 import ModalComponent3 from "@/components/ui/blogPage/modals/ModalComponent3";
 import ModalComponent4 from "@/components/ui/blogPage/modals/ModalComponent4";
+import {Textarea} from "@nextui-org/react";
+
+const TextArea:React.FC = () => {
+    return (
+        <Textarea
+            label="Comments"
+            placeholder="Write a comment..."
+            className="max-w-2xl rounded-lg"
+        />
+    );
+}
 
 const BlogPage = () => {
     const {isOpen, onOpen, onClose} = useDisclosure();
-
     return (
         <>
             <main className="pt-8 pb-16 lg:pt-20 lg:pb-24 dark:bg-gray-900 antialiased">
@@ -29,7 +39,7 @@ const BlogPage = () => {
 
                     {/* Article 3 */}
                     <article
-                        className={`${styles.article} format format-sm sm:format-base lg:format-lg format-blue dark:format-invert`}>
+                        className={`${styles.article} relative format format-sm sm:format-base lg:format-lg format-blue dark:format-invert`}>
                         <header className="mb-4 lg:mb-6 not-format">
                             <address className="flex items-center mb-6 not-italic">
                                 <div className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
@@ -81,13 +91,15 @@ const BlogPage = () => {
 
                         <section className="not-format">
                             <form className="my-6">
-                                <div
-                                    className="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                                    <label htmlFor="comment" className="sr-only">Your comment</label>
-                                    <textarea id="comment" rows={6}
-                                              className="px-0 w-full text-sm text-gray-900 border-0 focus:ring-0 dark:text-white dark:placeholder-gray-400 dark:bg-gray-800"
-                                              placeholder="Write a comment..." required={true}></textarea>
-                                </div>
+                                <TextArea/>
+
+                                {/*<div*/}
+                                {/*    className="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">*/}
+                                {/*    <label htmlFor="comment" className="sr-only">Your comment</label>*/}
+                                {/*    <textarea id="comment" rows={6}*/}
+                                {/*              className="px-0 w-full text-sm text-gray-900 border-0 focus:ring-0 dark:text-white dark:placeholder-gray-400 dark:bg-gray-800"*/}
+                                {/*              placeholder="Write a comment..." required={true}></textarea>*/}
+                                {/*</div>*/}
                                 <div className="flex justify-between items-center mb-6">
                                     <Button type="submit" className={styles.button}>
                                         Post comment
@@ -146,13 +158,7 @@ const BlogPage = () => {
 
                         <section className="not-format">
                             <form className="my-6">
-                                <div
-                                    className="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                                    <label htmlFor="comment" className="sr-only">Your comment</label>
-                                    <textarea id="comment" rows={6}
-                                              className="px-0 w-full text-sm text-gray-900 border-0 focus:ring-0 dark:text-white dark:placeholder-gray-400 dark:bg-gray-800"
-                                              placeholder="Write a comment..." required={true}></textarea>
-                                </div>
+                                <TextArea/>
                                 <div className="flex justify-between items-center mb-6">
                                     <Button type="submit" className={styles.button}>
                                         Post comment
@@ -213,13 +219,7 @@ const BlogPage = () => {
 
                         <section className="not-format">
                             <form className="my-6">
-                                <div
-                                    className="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                                    <label htmlFor="comment" className="sr-only">Your comment</label>
-                                    <textarea id="comment" rows={6}
-                                              className="px-0 w-full text-sm text-gray-900 border-0 focus:ring-0 dark:text-white dark:placeholder-gray-400 dark:bg-gray-800"
-                                              placeholder="Write a comment..." required={true}></textarea>
-                                </div>
+                                <TextArea/>
                                 <div className="flex justify-between items-center mb-6">
                                     <Button type="submit" className={styles.button}>
                                         Post comment
@@ -301,13 +301,7 @@ const BlogPage = () => {
 
                         <section className="not-format">
                             <form className="my-6">
-                                <div
-                                    className="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                                    <label htmlFor="comment" className="sr-only">Your comment</label>
-                                    <textarea id="comment" rows={6}
-                                              className="px-0 w-full text-sm text-gray-900 border-0 focus:ring-0 dark:text-white dark:placeholder-gray-400 dark:bg-gray-800"
-                                              placeholder="Write a comment..." required={true}></textarea>
-                                </div>
+                                <TextArea/>
                                 <div className="flex justify-between items-center mb-6">
                                     <Button type="submit" className={styles.button}>
                                         Post comment

@@ -10,9 +10,8 @@
 import React from 'react';
 import logo from '../../../../public/logo/icon_ukrops.png'
 import Image from "next/image";
-import {Button, useDisclosure} from "@nextui-org/react";
+import {useDisclosure} from "@nextui-org/react";
 import Link from "next/link";
-import AppModal from "@/components/ui/AppModal";
 
 const SignupPage: React.FC = () => {
     const {isOpen, onOpen, onClose} = useDisclosure();
@@ -65,10 +64,14 @@ const SignupPage: React.FC = () => {
                                                required={true}/>
                                     </div>
                                     <div className="ml-3 text-sm">
-                                        <label htmlFor="terms" className="font-light text-gray-500 dark:text-gray-300">I
-                                            accept the <a
+                                        <label htmlFor="terms" className="font-light text-gray-500 dark:text-gray-300">
+                                            I accept the
+                                            <Link
                                                 className="font-medium text-primary-600 hover:underline dark:text-primary-500"
-                                                href="#">Terms and Conditions</a></label>
+                                                href="/term"
+                                            > Terms and Conditions
+                                            </Link>
+                                        </label>
                                     </div>
                                 </div>
                                 <button type="submit"
@@ -78,14 +81,13 @@ const SignupPage: React.FC = () => {
                                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                                     Already have an account?
                                     <Link href="/login"
-                                       className="font-medium ml-2 text-primary-600 hover:underline dark:text-primary-500"
-                                       type='button'
-                                       onClick={onOpen}
+                                          className="font-medium ml-2 text-primary-600 hover:underline dark:text-primary-500"
+                                          type="button"
+                                          onClick={onOpen}
                                     >Login here
                                     </Link>
                                 </p>
                             </form>
-                            {/*<AppModal isOpen={isOpen} onClose={onClose}/>*/}
                         </div>
                     </div>
                 </div>

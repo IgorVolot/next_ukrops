@@ -17,7 +17,7 @@ const config: Config = {
     },
   },
   plugins: [
-    require('flowbite/plugin')
+    require ('flowbite/plugin'), require('flowbite-typography')
   ],
 };
 export default config;

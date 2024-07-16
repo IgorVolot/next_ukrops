@@ -67,7 +67,7 @@ class Footer extends Component {
                                         <Link href="#" className="hover:underline">Privacy Policy</Link>
                                     </li>
                                     <li>
-                                        <Link href="#" className="hover:underline">Terms &amp; Conditions</Link>
+                                        <Link href="/term" className="hover:underline">Terms &amp; Conditions</Link>
                                     </li>
                                 </ul>
                             </div>
