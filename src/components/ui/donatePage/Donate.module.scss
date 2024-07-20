@@ -15,7 +15,7 @@
     border-left: 1px groove rgba(220, 220, 220, 0.3);
 
     .title {
-      @apply ml-4 md:ml-24 md:text-5xl leading-tight dark:text-slate-200;
+      @apply lg:ml-24 text-3xl md:text-5xl leading-tight dark:text-slate-200;
     }
 
     .text {
@@ -27,7 +27,7 @@
     }
 
     .mediaBlock {
-      @apply mt-4 md:my-16 mx-auto;
+      @apply mt-4 md:my-16 mx-auto max-w-64 md:max-w-xl;
     }
 
     .button, .buttonBack {

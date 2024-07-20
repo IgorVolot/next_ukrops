@@ -14,6 +14,6 @@
   }
 
   .rightContainer {
-    @apply w-full md:w-1/2 bg-slate-100 dark:bg-gray-900;
+    @apply w-full md:w-1/2 md:px-4 xl:px-12 bg-slate-100 dark:bg-gray-900;
   }
 }
