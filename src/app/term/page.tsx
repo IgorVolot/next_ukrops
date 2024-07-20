@@ -6,11 +6,15 @@
  *  *
 /*/
 
-import React from "react";
-import {Progress} from "@nextui-org/react";
+import React from 'react';
+import Terms from "@/components/ui/termsPage/Terms";
 
-export default function ProgressBar() {
+const Term:React.FC = () => {
     return (
-        <Progress isStriped={true} color={'danger'} size={"md"} aria-label="Loading..." value={60} className="max-w-[180px] h-2 rounded-xl bg-cyan-500" />
+        <div>
+            <Terms/>
+        </div>
     );
-}
+};
+
+export default Term;

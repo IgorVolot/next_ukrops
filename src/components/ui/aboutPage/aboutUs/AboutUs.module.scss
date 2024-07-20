@@ -8,58 +8,80 @@
 
 
 .mainContainer {
-  @apply relative;
-  background-color: #8CDAEC;
-  height: 32rem;
+  @apply relative mb-8 h-[880px] md:h-[980px] lg:h-[500px] lg:mb-0 w-full;
+  //height: 32rem;
 
   .block {
-    @apply absolute flex flex-col md:flex-row -top-60 left-8 right-8 md:left-48 md:right-48;
-    padding: 2rem 4rem;
-    background-color: white;
-    max-width: calc(100vw - 20rem);
-    border-top: 1px groove rgba(141, 79, 152, 0.13);
-    border-left: 1px groove rgba(141, 79, 152, 0.13);
-    box-shadow: 10px 10px 6px rgba(25, 75, 73, 0.22);
+    @apply absolute bg-white px-6 pt-6 flex flex-col lg:flex-row lg:px-8 lg:-top-60 lg:left-40 lg:right-40 xl:left-48 xl:right-48 2xl:px-20 2xl:left-80 2xl:right-80;
+
 
 
     .textBlock {
-      @apply flex-col my-auto md:py-12;
+      @apply  lg:flex-col lg:my-auto lg:py-8;
 
       .subTitle {
         @apply text-slate-500 dark:text-slate-300;
       }
 
       .title {
-        @apply text-slate-800 text-3xl mt-2 md:mt-8 dark:text-slate-200;
+        @apply text-slate-800 text-3xl mt-2 lg:mt-8 dark:text-slate-200;
       }
 
       .text {
-        @apply mt-2 md:mt-8 md:mr-8 dark:text-gray-400;
+        @apply mt-2 lg:mt-8 lg:mr-3  dark:text-gray-400;
       }
     }
 
-    .img {
-      @apply p-2 md:py-20;
+    .buttonBlock {
+      @apply mx-auto;
+
+      .button {
+        @apply my-6 lg:mt-12 font-medium px-8 uppercase rounded-xl border border-slate-500;
+        background-color: #8CDAEC;
+        width: 200px;
+      }
+
+      .button:hover {
+        @apply bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600;
+        //background-color: ghostwhite;
+        transform-style: preserve-3d;
+        transition: ease-in-out 0.6s;
+        scale: 1.3;
+        border: 1.5px groove rgba(25, 75, 73, 0.22);
+        $color: rgba(34, 103, 96, 0.58);
+        $fade: 0.7;
+        $new-color: rgba(red($color), green($color), blue($color), alpha($color) * (1-$fade));
+        box-shadow: 10px 10px 6px $new-color;
+      }
+    }
+
+    .imageBlock {
+      @apply py-6 lg:my-auto;
+
+      .img1 {
+        @apply  mx-auto;
+      }
     }
   }
+}
 
-
-  .button {
-    @apply mt-4 md:mt-12 font-medium px-8 py-2 uppercase rounded-xl border border-slate-500;
+@media screen and (min-width: 769px){
+  .mainContainer {
     background-color: #8CDAEC;
-    width: 200px;
   }
 
-  .button:hover {
-    @apply bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600;
-    //background-color: ghostwhite;
-    transform-style: preserve-3d;
-    transition: ease-in-out 0.6s;
-    scale: 1.3;
-    border: 1.5px groove rgba(25, 75, 73, 0.22);
-    $color: rgba(34, 103, 96, 0.58);
-    $fade: 0.7;
-    $new-color: rgba(red($color), green($color), blue($color), alpha($color) * (1-$fade));
-    box-shadow: 10px 10px 6px $new-color;
+  .block {
+    padding: 2rem 4rem;
+    background-color: white;
+    max-width: calc(100vw - 20rem);
+    border-top: 1px groove rgba(141, 79, 152, 0.13);
+    border-left: 1px groove rgba(141, 79, 152, 0.13);
+    box-shadow: 10px 10px 6px rgba(25, 75, 73, 0.22);
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .block {
+    @apply pb-4 border-b-2 border-slate-500 border-double;
   }
 }

@@ -56,7 +56,7 @@ const OurActivity: React.FC = () => {
                             through my educational activity. Since 2014 I've been involved with my Ukrainian anesthetic
                             colleagues both by going there organizing seminars and conferences. I know quite a few
                             people in the medical world in Ukraine and I'm able to contact them directly and I really
-                            know [...]`}</p>
+                             [...]`}</p>
                         <div className={styles.footer}>
                             <data className={styles.data}>
                                 March 2024

@@ -24,7 +24,7 @@ const Founders: React.FC = () => {
 
                 <div
                     className={styles.card}>
-                    <Image className={styles.img} src={leo} alt="Leo" width={300} height={300}/>
+                    <Image className={styles.img} src={leo} alt="Leo" width={250} height={250}/>
                     <div className="p-5">
                         <h2 className={styles.title}>Dr. Leo Krivskiy</h2>
                         <h3 className={styles.subTitle}>Founder</h3>
@@ -104,7 +104,7 @@ const Founders: React.FC = () => {
                 </div>
                 <div
                     className={styles.card}>
-                    <Image className={styles.img} src={anna} alt="Anna" width={300} height={300}/>
+                    <Image className={styles.img} src={anna} alt="Anna" width={250} height={250}/>
                     <div className="p-5">
                         <h2 className={styles.title}>Dr. Anna Hunter</h2>
                         <h3 className={styles.subTitle}>Co-Founder</h3>
@@ -152,7 +152,7 @@ const Founders: React.FC = () => {
                 </div>
                 <div
                     className={styles.card}>
-                    <Image className={styles.img} src={justas} alt="Justas" width={300} height={300}/>
+                    <Image className={styles.img} src={justas} alt="Justas" width={250} height={250}/>
                     <div className="p-5">
                         <h2 className={styles.title}>Dr. Justas Mazunaitis</h2>
                         <h3 className={styles.subTitle}>Co-Founder</h3>

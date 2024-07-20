@@ -24,7 +24,7 @@ const Donate:React.FC = () => {
                     <HandCoins className="icon mx-4" style={{color: "#a3e635"}}/>
                 </Link>
             </Button>
-            <HeartHandshake className="icon mx-auto my-auto flex-row" style={{color: "#2E4049"}}/>
+            <HeartHandshake className="icon mx-2 my-auto flex-row" style={{color: "#2E4049"}}/>
         </div>
     );
 };

@@ -13,12 +13,14 @@ import {links} from "./menu.data";
 import styles from "./Navbar.module.scss";
 import Image from "next/image";
 import logo from './../../../../public/logo/icon_ukrops.png'
-import {Button} from "@nextui-org/react";
+import {Button, useDisclosure} from "@nextui-org/react";
 import {FaBars, FaTimes} from "react-icons/fa";
 
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
+    const {isOpen, onOpen, onClose} = useDisclosure();
+
     return (
         <nav className={styles.navbar}>
             <div className="flex flex-wrap items-center justify-between mx-auto p-4">
@@ -46,11 +48,13 @@ const Navbar = () => {
 
                 <ul className="hidden md:flex lg:mr-5">
                     <Button className={styles.button}>
-                        <Link href="/login">Login</Link>
+                        <Link href="/login"
+                              type="button"
+                              onClick={onOpen}
+                        >Login
+                        </Link>
                     </Button>
-
                 </ul>
-
                 <div
                     onClick={() => setNav(!nav)}
                     className="cursor-pointer z-40 text-gray md:hidden"
@@ -71,9 +75,12 @@ const Navbar = () => {
                             </li>
                         ))}
                         <li className="cursor-pointer mx-auto capitalize py-6 text-2xl">
-                            <Button>
-                                <Link href="/login" onClick={() => setNav(!nav)}>Login</Link>
-                            </Button>
+                            <Link className="border border-yellow-200 rounded-xl py-2 px-6"
+                                  href="/signup"
+                                  onClick={() => setNav(!nav)}
+                            >
+                                Sign up
+                            </Link>
                         </li>
                     </ul>
 

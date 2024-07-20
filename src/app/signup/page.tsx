@@ -10,14 +10,14 @@
 
 
 import React from 'react';
-import RegisterPage from "@/components/ui/registerPage/RegisterPage";
+import SignupPage from "@/components/ui/signupPage/SignupPage";
 
-const Register:React.FC = () => {
+const Signup:React.FC = () => {
     return (
         <div>
-            <RegisterPage/>
+            <SignupPage/>
         </div>
     );
 };
 
-export default Register;
+export default Signup;

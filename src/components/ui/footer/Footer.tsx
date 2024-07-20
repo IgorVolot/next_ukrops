@@ -21,14 +21,15 @@ class Footer extends Component {
             <footer className={`${styles.footer} dark:bg-gray-900`}>
                 <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                     <div className="md:flex md:justify-between">
-                        <div className="flex flex-col md:flex-row mb-6 md:mb-0">
-                            <div className="flex mx-auto">
+                        <div className="flex flex-col lg:flex-row mb-6 md:m-0">
+                            <div className="flex flex-auto mx-auto">
                                 <Link href="/home" className="flex">
                                     <Image src={Logo} className="p-4"
-                                           alt="UKROPS Logo" width={220} height={200}/>
+                                           alt="UKROPS Logo" width={220} height={180}/>
                                 </Link>
                             </div>
-                            <h3 className="text-center md:text-2xl md:my-auto font-semibold whitespace-nowrap dark:text-white">UKROPS Medical Charity</h3>
+                            <h3 className="text-center mx-2 lg:text-2xl md:my-auto  whitespace-nowrap dark:text-white">UKROPS
+                                Medical Charity</h3>
                         </div>
                         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                             <div>
@@ -38,7 +39,7 @@ class Footer extends Component {
 
                                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                     <li className="mb-4">
-                                        <Link href="/aboutPage" className="hover:underline">About</Link>
+                                        <Link href="/about" className="hover:underline">About</Link>
                                     </li>
                                     <li>
                                         <Link href="/blog" className="hover:underline">Blog</Link>
@@ -63,10 +64,10 @@ class Footer extends Component {
                                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                     <li className="mb-4">
-                                        <Link href="#" className="hover:underline">Privacy Policy</Link>
+                                        <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
                                     </li>
                                     <li>
-                                        <Link href="#" className="hover:underline">Terms &amp; Conditions</Link>
+                                        <Link href="/term" className="hover:underline">Terms &amp; Conditions</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -76,6 +77,10 @@ class Footer extends Component {
                     <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a
               href="https://flowbite.com/" className="hover:underline">UKROPS Medical</a>. All Rights Reserved.
+                        <p><a
+                            href="https://www.freepik.com/free-photo/ordinary-busy-day-surgeon_17291089.htm#query=surgeon&position=0&from_view=keyword&track=sph&uuid=ce4fefc5-a328-4f4a-9e05-f995966650c5">Image by gpointstudio</a> on Freepik
+                        </p>
+
           </span>
                         <div className="flex mt-4 sm:justify-center sm:mt-0">
                             <a href="https://www.facebook.com/profile.php?id=100009578859571"

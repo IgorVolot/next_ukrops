@@ -15,25 +15,27 @@ import Header from "@/components/ui/header/Header";
 
 const font = Oswald({subsets: ["latin"]});
 
+interface IProps {
+    auth?: React.ReactNode;
+    children: React.ReactNode;
+}
+
 export const metadata: Metadata = {
-  title: "UKROPS Medical Charity",
-  description: "The Ukrops Medical Charity is a charity fund that was formed by a group of UK doctors to provide direct aid to Ukrainian medics.",
+    title: "UKROPS Medical Charity",
+    description: "The Ukrops Medical Charity is a charity fund that was formed by a group of UK doctors to provide direct aid to Ukrainian medics.",
 };
 
 
-export default function RootLayout({
-                                     children,
-                                   }: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-      <html lang="en">
-      <body className={font.className}>
-      <Navbar/>
-      <Header/>
-      {children}
-      <Footer/>
-      </body>
-      </html>
-  );
+export default function RootLayout({auth, children}: IProps) {
+    return (
+        <html lang="en">
+        <body className={font.className}>
+        <Navbar/>
+        <Header/>
+        {auth}
+        {children}
+        <Footer/>
+        </body>
+        </html>
+    );
 }

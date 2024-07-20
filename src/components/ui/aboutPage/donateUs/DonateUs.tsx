@@ -14,8 +14,8 @@ import {Button} from "@nextui-org/react";
 
 const DonateUs = () => {
     return (
-        <section id='donateBlock' className={styles.mainContainer}>
-            <div  className={styles.textBlock}>
+        <section id="donateBlock" className={styles.mainContainer}>
+            <div className={styles.textBlock}>
                 <p className={styles.subTitle}>How donation can help</p>
                 <h1 className={styles.title}>Donation</h1>
                 <p className={styles.text}>
@@ -32,13 +32,16 @@ const DonateUs = () => {
                     medical and healthcare facilities and infrastructure in Ukraine when the war is finally over. We are
                     starting small, but we are aiming big!
                 </p>
-                <Button className={styles.button}>
-                    <Link href="/about/donation">Learn more</Link>
-                </Button>
+                <div className={styles.buttonBlock}>
+                    <Button className={styles.button}>
+                        <Link href="/about/donation">Learn more</Link>
+                    </Button>
+                </div>
             </div>
             <div className={styles.mediaBlock}>
-                <iframe title="Leo-Row-Atlantic" width="420" height="315"
-                        src="https://www.youtube.com/embed/wKWVc-5VPFA?autoplay=1&mute=1">
+                <iframe title="Leo-Row-Atlantic" width="260" height="195"
+                        src="https://www.youtube.com/embed/wKWVc-5VPFA?autoplay=1&mute=1"
+                        className={styles.video}>
                 </iframe>
             </div>
         </section>

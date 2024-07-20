@@ -15,7 +15,7 @@ const Header:React.FC = () => {
     return (
         <header>
             <div
-                className="mt-20 p-8 text-center text-lg text-yellow-800 bg-yellow-50 border-b border-yellow-300 dark:bg-gray-800 dark:text-yellow-300"
+                className="p-8 text-center text-lg text-yellow-800 bg-yellow-50 border-b border-yellow-300 dark:bg-gray-800 dark:text-yellow-300"
                 role="alert">
                 <span className="font-medium">Warning!</span>
                 <p>

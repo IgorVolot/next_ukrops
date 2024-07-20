@@ -16,8 +16,8 @@ import {Button} from "@nextui-org/react";
 const NeedHelp: React.FC = () => {
     const [open, setOpen] = useState(true);
     return (
-        <div className={`${styles.mainContainer} px-4 md:px-10 lg:px-20 lg:pt-24 lg:pb-96 `}>
-            <div className="flex flex-col items-center py-10 md:py-20">
+        <div className={`${styles.mainContainer}`}>
+            <div className="flex flex-col items-center py-10">
                 <Button className={styles.donateButton}>
                     <Link href="/login" onClick={() => setOpen(!open)}>Donate Now</Link>
                 </Button>
