@@ -18,7 +18,7 @@ const AboutHero:React.FC = () => {
     return (
         <section className={styles.mainSection}>
             <div className={`${styles.mainContainer}`}>
-                <Image src={backgroundImage} alt='backgroundImage' className='backgroundImage w-full bg-cover bg-no-repeat' />
+                {/*<Image src={backgroundImage} alt='backgroundImage' className='backgroundImage w-full bg-cover bg-no-repeat' />*/}
                 <AboutLeft />
                 <AboutRight/>
             </div>

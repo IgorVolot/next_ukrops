@@ -7,16 +7,17 @@
 /*/
 
 .partners {
-  @apply flex flex-col justify-center py-4 md:py-16 px-4 md:px-20 bg-white border-2 border-b-slate-200 border-t-teal-100;
+  @apply flex flex-col justify-center py-4 md:py-16 px-4 lg:px-20 bg-white border-2 border-b-slate-200 border-t-teal-100;
 }
 
 .title {
-  @apply text-center mt-5 md:mt-10 text-3xl;
+  @apply text-center mt-5 lg:mt-10 text-3xl;
 }
 
 .embla {
-  overflow: hidden;
-  width: 100%;
+  @apply w-full overflow-x-hidden;
+  //overflow: hidden;
+  //width: 100%;
 }
 
 .embla__container {
@@ -29,20 +30,30 @@
 }
 
 .embla__slide {
-  position: relative;
+  @apply relative;
   flex: 0 0 auto;
   width: calc(100% / 3);
   box-sizing: border-box;
 }
 
+
+
 .partnersLogo {
-  margin: auto;
-  height: 80px;
+  @apply h-[80px] mx-auto my-auto;
+  //margin: auto;
+  //height: 80px;
 }
 
 .logos {
-  display: flex;
-  flex-direction: row;
+  @apply flex flex-row bg-white;
   padding: 60px 0;
-  background: white;
+}
+
+@media screen and (max-width: 767px) {
+  .embla__slide {
+    @apply relative;
+    flex: 0 0 auto;
+    width: calc(100% / 1);
+    box-sizing: border-box;
+  }
 }

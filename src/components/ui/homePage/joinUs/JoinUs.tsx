@@ -8,16 +8,16 @@
 
 'use client'
 import React, {FC, useState} from 'react';
-import styles from "@/components/ui/homePage/hero/Hero.module.scss";
+import styles from "@/components/ui/homePage/joinUs/JoinUs.module.scss";
 import Link from "next/link";
-import joinUs from "../../../../../public/homePage/hero/joinUs.jpg";
+import joinUs from "../../../../../public/homePage/joinUs/joinUs.jpg";
 import Image from "next/image";
 import {Button} from "@nextui-org/react";
 
 const JoinUs: FC = () => {
     const [open, setOpen] = useState(true);
     return (
-        <div className='flex px-4 md:px-40 py-4 md:py-24 flex-row'>
+        <div className={styles.mainContainer}>
             <div className={styles.imageContainer}>
                 <Image
                     src={joinUs}
@@ -28,13 +28,13 @@ const JoinUs: FC = () => {
                     height={600}
                 />
             </div>
-            <div className='flex flex-col my-auto mx-auto'>
-                <h2 className='text-xl md:text-3xl'>{`Join Us in Supporting Ukraine's Medics`}</h2>
-                <p className='py-4'>
-                    UKROPS Medical Charity focuses on providing essential<br/>
+            <div className={styles.textBlock}>
+                <h2 className={styles.title}>{`Join Us in Supporting Ukraine's Medics`}</h2>
+                <p className={styles.text}>
+                    UKROPS Medical Charity focuses on providing essential
                     aid to Ukrainian medical professionals in need.
                 </p>
-                <Button className={styles.button} style={{width:"150px"}}>
+                <Button className={styles.button} >
                     <Link href="/login" onClick={() => setOpen(!open)} >Donate Now</Link>
                 </Button>
             </div>

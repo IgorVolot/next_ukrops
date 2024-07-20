@@ -19,10 +19,13 @@ const CardsBlock: React.FC = () => {
     return (
         <>
             <div className={styles.cardsBlock}>
-                <div className={`${styles.cardContainer} mx-auto md:px-4 order-1`}>
-                    <Image src={img1} alt="help" className={`${styles.img} z-0`}/>
-                    <div className={`${styles.cardBody} z-10`}>
-                        <div className="card-body-top  p-2">
+                <div className={`${styles.cardContainer}`}>
+                    <div className={`${styles.imgContainer}`}>
+                        <Image src={img1} alt="help" className={`${styles.img}`} width={200} height={200} />
+                    </div>
+
+                    <div className={`${styles.cardBody}`}>
+                        <div className="card-body-top p-2">
                             <span
                                 className="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300"
                             >First Aid
@@ -52,9 +55,11 @@ const CardsBlock: React.FC = () => {
                         <Donate/>
                     </div>
                 </div>
-                <div className={`${styles.cardContainer} mx-auto md:px-4 order-2`}>
-                    <Image src={img2} alt="help" className={`${styles.img} z-0`}/>
-                    <div className={`${styles.cardBody} z-10`}>
+                <div className={`${styles.cardContainer}`}>
+                    <div className={`${styles.imgContainer}`}>
+                        <Image src={img2} alt="help" className={`${styles.img}`} width={200} height={200}/>
+                    </div>
+                    <div className={`${styles.cardBody}`}>
                         <div className="card-body-top  p-2">
                             <span
                                 className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"
@@ -84,9 +89,11 @@ const CardsBlock: React.FC = () => {
                         <Donate/>
                     </div>
                 </div>
-                <div className={`${styles.cardContainer} mx-auto md:px-4 order-3`}>
-                    <Image src={img3} alt="help" className={`${styles.img} z-0`}/>
-                    <div className={`${styles.cardBody} z-10`}>
+                <div className={`${styles.cardContainer}`}>
+                    <div className={`${styles.imgContainer}`}>
+                        <Image src={img3} alt="help" className={`${styles.img}`} width={200} height={200}/>
+                    </div>
+                    <div className={`${styles.cardBody} `}>
                         <div className="card-body-top  p-2">
                             <span
                                 className="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-pink-900 dark:text-pink-300"
@@ -116,9 +123,11 @@ const CardsBlock: React.FC = () => {
                         <Donate/>
                     </div>
                 </div>
-                <div className={`${styles.cardContainer} mx-auto md:px-4 order-4`}>
-                    <Image src={img4} alt="help" className={`${styles.img} z-0`}/>
-                    <div className={`${styles.cardBody} z-10`}>
+                <div className={`${styles.cardContainer}`}>
+                    <div className={`${styles.imgContainer}`}>
+                        <Image src={img4} alt="help" className={`${styles.img}`} width={200} height={200}/>
+                    </div>
+                    <div className={`${styles.cardBody}`}>
                         <div className="card-body-top  p-2">
                             <span
                                 className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300"

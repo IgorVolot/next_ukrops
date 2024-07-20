@@ -16,7 +16,7 @@ const AboutRight = () => {
     return (
         <div className={styles.aboutHeroRight}>
             <div className={`${styles.textBlock}`}>
-                <h1 className="text-5xl font-bold">UKROPS Medical</h1>
+                <h1 className={styles.title}>UKROPS Medical</h1>
                 <div className="mt-2 md:mt-8 ">
                     <p className={`${styles.text} mt-2 md:mt-8`}>
                         The UKROPS Medical Charity was formed by a group of UK doctors to provide a direct aid to
@@ -28,7 +28,8 @@ const AboutRight = () => {
                             className={styles.link}
                             title="Welcome to my personal  project!"
                         > Dr. Leonid Krivskiy
-                        </a> who had started raising money to help his Ukrainian colleagues since the beginning of Russian invasion.
+                        </a> who had started raising money to help his Ukrainian colleagues since the beginning of
+                        Russian invasion.
                     </p>
                     <p className={`${styles.text} mt-2 md:mt-8`}>
                         He has been sourcing and delivering tactical medical and hospital disposables into Ukraine as
@@ -42,18 +43,25 @@ const AboutRight = () => {
                         </a> in a tertiary hospital in Kyiv.
                     </p>
                 </div>
-                <Button className={styles.button}>
-                    <Link href="/login">Donate Now</Link>
-                </Button>
+                <div className={`${styles.buttonBlock}  border-b-2 border-double border-slate-300`}>
+                    <Button className={`${styles.button} mb-6 `}>
+                        <Link href="/login">Donate Now</Link>
+                    </Button>
+                </div>
 
-                <div className="mt-4 md:mt-12 border-t-2 border-slate-300">
+                <div className={styles.emailBlock}>
                     <p className={`${styles.text} mt-2 md:mt-12`}>
-                        Have any questions?
+                        <Link href="/contact" title='contact'>
+                            Have any questions?
+                        </Link>
                     </p>
                     <p className={`${styles.text} mb-2 md:mb-4`}>
-                        Contact us!
+                        <Link href="/contact" title='contact'>
+                            Contact us!
+                        </Link>
+
                     </p>
-                    <a href="mailto:leo@ukropsmedical.org" title="mail" className={styles.link}>
+                    <a href="mailto:leo@ukropsmedical.org" title="mail" className={`${styles.link} text-lg`}>
                         <address>
                             info@ukrops.medical.org
                         </address>

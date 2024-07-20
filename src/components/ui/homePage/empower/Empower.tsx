@@ -32,7 +32,7 @@ const Empower: React.FC = () => {
             </div>
 
             <div className="flex flex-col columns-2 mt-4 md:mt-16">
-                <div className="flex flex-row justify-around">
+                <div className="flex flex-col md:flex-row justify-around">
                     <div className="flex flex-row pt-12  order-1">
                         <div>
                             <Ambulance className="icon mr-4"/>
@@ -56,7 +56,7 @@ const Empower: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-row justify-around">
+                <div className="flex flex-col md:flex-row justify-around">
                     <div className="flex flex-row pt-12  order-3">
                         <div>
                             <Microscope className="icon mr-4"/>

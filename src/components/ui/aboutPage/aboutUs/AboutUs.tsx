@@ -44,7 +44,6 @@ const AboutUs:React.FC = () => {
                         </Button>
                     </div>
                 </div>
-
                 <div className={styles.imageBlock}>
                     <Image src={img1} alt="About_Us" className={styles.img} width={1400} height={1400}/>
                 </div>

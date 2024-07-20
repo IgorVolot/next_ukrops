@@ -39,7 +39,7 @@ const Partners: FC = () => {
     }, [emblaApi]);
 
     useEffect(() => {
-        const intervalId = setInterval(() => scrollToNext(), 2500); // slides every 2.5 seconds
+        const intervalId = setInterval(() => scrollToNext(), 3000); // slides every 3 seconds
         return () => clearInterval(intervalId);
     }, [scrollToNext]);
 
