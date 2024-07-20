@@ -7,11 +7,15 @@
 /*/
 
 .mainContainer {
-  @apply flex flex-col rounded-xl lg:rounded-none lg:flex-row bg-white mx-2 md:mx-4 lg:mx-16 p-4 lg:py-20 ;
+  @apply flex flex-col rounded-xl lg:rounded-none lg:flex-row bg-white mx-2 md:mx-4 lg:mx-16 p-4 lg:py-20 xl:mx-32 xl:px-12 2xl:mx-60 2xl:px-20;
   box-shadow: 10px 10px 6px rgba(25, 75, 73, 0.22);
 
   .textBlock {
-    @apply  px-4 md:px-16 lg:px-8 w-full lg:w-2/3;
+    @apply px-4 md:px-16 lg:px-8 w-full lg:w-2/3;
+
+    @media screen and (min-width: 426px) and (max-width: 768px) {
+      @apply py-12 px-8;
+    }
 
     .subTitle {
       @apply uppercase ml-4 lg:ml-12 text-sm text-slate-500 dark:text-slate-300;
@@ -28,7 +32,7 @@
   }
 
   .buttonBlock {
-    @apply  py-6 mx-auto;
+    @apply py-6 mx-auto;
 
     .button {
       @apply my-4 lg:mt-12 font-medium px-8 py-2 uppercase rounded-xl border border-slate-500;
@@ -50,16 +54,10 @@
   }
 
   .mediaBlock {
-    @apply  pt-6 mx-auto md:pb-6 lg:px-8 my-auto ;
+    @apply pt-6 mx-auto md:pb-6 lg:px-8 my-auto ;
 
     .video {
       @apply lg:w-[420px] lg:h-[315px];
     }
-  }
-}
-
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  .textBlock {
-    @apply py-12 px-8;
   }
 }

@@ -69,7 +69,7 @@ const Navbar = () => {
                                 key={id}
                                 className="cursor-pointer mx-auto capitalize py-6 text-2xl"
                             >
-                                <Link onClick={() => setNav(!nav)} href={link}>
+                                <Link onClick={() => setNav(!nav)} href={"/" + link}>
                                     {link}
                                 </Link>
                             </li>

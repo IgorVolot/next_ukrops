@@ -53,6 +53,8 @@
 
 .modalContainer {
   @apply mx-3 max-w-3xl mt-[87px] mb-52 rounded-xl bg-white;
+  max-height: 80%;
+
 }
 
 .commentsArticle {
