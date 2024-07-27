@@ -8,12 +8,21 @@
 
 .mainContainer {
   @apply flex md:flex-row;
+  @media screen and (min-width: 2560px) {
+    @apply h-[86rem];
+  }
 
   .leftContainer {
     @apply invisible md:visible md:w-1/2 bg-center bg-no-repeat bg-[url('/contactPage/img.jpeg')] bg-gray-800 bg-blend-multiply;
+    @media screen and (min-width: 2560px) {
+      @apply w-7/12 bg-cover;
+    }
   }
 
   .rightContainer {
     @apply w-full md:w-1/2 md:px-4 xl:px-12 bg-slate-100 dark:bg-gray-900;
+    @media screen and (min-width: 2560px) {
+      @apply w-5/12 mt-20;
+    }
   }
 }

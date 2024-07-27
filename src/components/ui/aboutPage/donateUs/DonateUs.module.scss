@@ -9,6 +9,11 @@
 .mainContainer {
   @apply flex flex-col rounded-xl lg:rounded-none lg:flex-row bg-white mx-2 md:mx-4 lg:mx-16 p-4 lg:py-20 xl:mx-32 xl:px-12 2xl:mx-60 2xl:px-20;
   box-shadow: 10px 10px 6px rgba(25, 75, 73, 0.22);
+  @media screen and (min-width: 2560px) {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 
   .textBlock {
     @apply px-4 md:px-16 lg:px-8 w-full lg:w-2/3;
@@ -26,7 +31,7 @@
     }
 
     .text {
-      @apply mt-2 lg:mt-8 lg:mr-8 text-lg dark:text-gray-400;
+      @apply mt-2 lg:mt-8 lg:mr-8 text-lg 2xl:text-xl dark:text-gray-400;
     }
 
   }

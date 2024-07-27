@@ -10,18 +10,23 @@
   @apply max-h-[2600px] md:min-h-dvh  px-4 lg:px-20 lg:pt-16;
   background-color: #8CDAEC;
 
+
   .title {
-    @apply text-3xl text-white mt-4 md:mt-10;
+    @apply text-3xl text-white mt-4 md:mt-10 2xl:text-5xl;
   }
 
   .cardsBlock {
     @apply grid gap-4 lg:grid-cols-2 md:my-10 md:mx-10 xl:px-20 2xl:grid-cols-4 justify-between;
     justify-content: center;
 
+    @media screen and (min-width: 2560px) {
+      @apply px-60;
+    }
+
   }
 
   .cardContainer {
-    @apply mb-72 relative lg:mb-80 ;
+    @apply mb-72 relative lg:mb-80 2xl:mx-8;
   }
 
   .imgContainer {

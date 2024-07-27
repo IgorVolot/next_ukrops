@@ -19,10 +19,10 @@ const Empower: React.FC = () => {
 
     return (
         <div className={styles.mainContainer}>
-            <div className="flex flex-row justify-center">
-                <h2 className="text-xl md:text-3xl">Empowering Ukrainian Medics</h2>
+            <div className={styles.titleBlock}>
+                <h2 className={styles.title}>Empowering Ukrainian Medics</h2>
             </div>
-            <div className="flex flex-row mt-4 md:mt-12 justify-center">
+            <div className={styles.buttonBlock}>
                 <Button className={styles.button} >
                     <Link href="/login" onClick={() => setOpen(!open)}>Join Us</Link>
                 </Button>
@@ -31,50 +31,50 @@ const Empower: React.FC = () => {
                 </Button>
             </div>
 
-            <div className="flex flex-col columns-2 mt-4 md:mt-16">
-                <div className="flex flex-col md:flex-row justify-around">
-                    <div className="flex flex-row pt-12  order-1">
+            <div className={styles.itemsContainer}>
+                <div className={styles.itemsBlock}>
+                    <div className={`${styles.item} order-1`}>
                         <div>
                             <Ambulance className="icon mr-4"/>
                         </div>
                         <div>
-                            <h3 className="text-xl">Medical Aid</h3>
-                            <p>
+                            <h3 className={styles.itemTitle}>Medical Aid</h3>
+                            <p className={styles.itemText}>
                                 Direct support to Ukrainian medical teams in conflict zones.
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-row pt-12 md:pl-40 order-2">
+                    <div className={`${styles.item} md:pl-40 2xl:pl-20 order-2`}>
                         <div>
                             <BriefcaseMedical className="icon mr-4"/>
                         </div>
                         <div>
-                            <h3 className="text-xl">Emergency Kits</h3>
-                            <p>
+                            <h3 className={styles.itemTitle}>Emergency Kits</h3>
+                            <p className={styles.itemText}>
                                 Supplying essential medical kits to front-line responders.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col md:flex-row justify-around">
-                    <div className="flex flex-row pt-12  order-3">
+                <div className={styles.itemsBlock}>
+                    <div className={`${styles.item} order-3`}>
                         <div>
                             <Microscope className="icon mr-4"/>
                         </div>
                         <div>
-                            <h3 className="text-xl">Education Funds</h3>
-                            <p>
+                            <h3 className={styles.itemTitle}>Education Funds</h3>
+                            <p className={styles.itemText}>
                                 Sponsoring advanced medical training for Ukrainian doctors.
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-row pt-12 md:pl-40 order-4">
+                    <div className={`${styles.item} md:pl-40 2xl:pl-20 order-4`}>
                         <div>
                             <HeartPulse className="icon mr-4"/>
                         </div>
                         <div>
-                            <h3 className="text-xl">Global Network</h3>
-                            <p>
+                            <h3 className={styles.itemTitle}>Global Network</h3>
+                            <p className={styles.itemText}>
                                 Connecting Ukrainian medics with global health experts.
                             </p>
                         </div>

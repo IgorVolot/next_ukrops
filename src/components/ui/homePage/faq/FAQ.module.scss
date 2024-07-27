@@ -10,16 +10,22 @@
 .mainContainer {
   @apply px-8 my-4 md:my-24 md:px-20 xl:px-80;
 
+
   .title1 {
-    @apply text-center text-3xl;
+    @apply text-center text-3xl 2xl:text-5xl;
   }
 
   .title2 {
-    @apply text-center text-xl my-4 md:my-8 text-slate-400;
+    @apply text-center text-xl my-4 md:my-8 text-slate-400 2xl:text-2xl;
   }
 
   .faqContainer {
     @apply bg-white rounded-t-xl shadow-md;
+    @media screen and (min-width: 2560px) {
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
   }
 
   .faqContainerActive {
