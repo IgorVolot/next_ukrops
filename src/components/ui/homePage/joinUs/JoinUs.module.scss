@@ -14,7 +14,7 @@
   .imageContainer {
     @apply order-2 md:order-none md:my-auto;
     @media screen and (min-width: 2560px) {
-      @apply pl-[600px];
+      @apply pl-[500px] mr-40;
     }
 
   }
@@ -22,14 +22,14 @@
   .img {
     @apply shadow-2xl shadow-slate-500;
     @media screen and (min-width: 2560px) {
-      @apply scale-125;
+      @apply scale-150;
     }
   }
 
   .textBlock {
     @apply flex flex-col my-auto mx-auto order-1 md:order-none md:pl-8;
     @media screen and (min-width: 2560px) {
-      @apply pr-[600px];
+      @apply ml-16 pr-[600px];
     }
 
     .title {
