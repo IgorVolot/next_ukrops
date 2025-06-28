@@ -14,27 +14,30 @@
   .imageContainer {
     @apply order-2 md:order-none md:my-auto;
     @media screen and (min-width: 2560px) {
-      @apply pl-80;
+      @apply pl-[500px] mr-40;
     }
 
   }
 
   .img {
     @apply shadow-2xl shadow-slate-500;
+    @media screen and (min-width: 2560px) {
+      @apply scale-150;
+    }
   }
 
   .textBlock {
     @apply flex flex-col my-auto mx-auto order-1 md:order-none md:pl-8;
     @media screen and (min-width: 2560px) {
-      @apply pr-20;
+      @apply ml-16 pr-[600px];
     }
 
     .title {
-      @apply text-2xl p-4 md:text-3xl  dark:text-white;
+      @apply text-2xl p-4 md:text-3xl 2xl:text-5xl  dark:text-white;
     }
 
     .text {
-      @apply p-4 order-3 md:order-none dark:text-gray-300;
+      @apply p-4 order-3 md:order-none 2xl:text-2xl dark:text-gray-300;
     }
 
     .button {

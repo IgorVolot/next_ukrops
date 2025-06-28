@@ -11,13 +11,11 @@
 }
 
 .title {
-  @apply text-center mt-5 lg:mt-10 text-3xl;
+  @apply text-center mt-5 lg:mt-10 text-3xl 2xl:text-5xl 2xl:pb-4;
 }
 
 .embla {
   @apply w-full overflow-x-hidden;
-  //overflow: hidden;
-  //width: 100%;
 }
 
 .embla__container {
@@ -40,8 +38,6 @@
 
 .partnersLogo {
   @apply h-[80px] mx-auto my-auto;
-  //margin: auto;
-  //height: 80px;
 }
 
 .logos {
