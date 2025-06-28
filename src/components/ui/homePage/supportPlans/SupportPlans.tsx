@@ -21,7 +21,7 @@ const SupportPlans: React.FC = () => {
 
             <div className={styles.mainBlock}>
                 {/* Block 1*/}
-                <div className={`${styles.block} bg-slate-50`}>
+                <div id={styles.block1} className={`${styles.block} bg-slate-50`}>
                     <h5 className={`${styles.title} text-gray-400`}>Basic Support</h5>
                     <div className={styles.costBlock}>
                         <h2 className={styles.cost}>Free</h2>
@@ -125,7 +125,7 @@ const SupportPlans: React.FC = () => {
                 </div>
 
                 {/* Block 3*/}
-                <div className={`${styles.block} bg-red-50`}>
+                <div id={styles.block3} className={`${styles.block} bg-red-50`}>
                     <h5 className={`${styles.title} text-black`}>Enterprise Solutions</h5>
                     <div className={styles.costBlock}>
                         <p className="text-slate-800">Contact us if you would like to provide customized support

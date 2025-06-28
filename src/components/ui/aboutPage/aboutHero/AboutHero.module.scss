@@ -179,6 +179,30 @@
   }
 }
 
+@media screen and (min-width: 2560px) {
+  .mainSection {
+    @apply h-[1300px];
+  }
+
+  .textBlock {
+    @apply ml-[400px];
+
+    .title {
+      @apply text-8xl;
+    }
+
+    .text {
+      @apply text-2xl;
+    }
+  }
+
+  .imgSection {
+    @apply left-60 mt-32;
+  }
+
+
+}
+
 @media screen and (min-width: 1920px) {
   .textBlock {
     @apply mt-16 left-[1000px];

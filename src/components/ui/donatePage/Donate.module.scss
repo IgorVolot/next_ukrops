@@ -13,13 +13,19 @@
     box-shadow: 10px 10px 6px rgba(25, 75, 73, 0.22);
     border-top: 1px groove rgba(220, 220, 220, 0.3);
     border-left: 1px groove rgba(220, 220, 220, 0.3);
+    @media screen and (min-width: 2560px) {
+      @apply py-40 shadow-2xl;
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
 
     .title {
-      @apply lg:ml-24 text-3xl md:text-5xl leading-tight dark:text-slate-200;
+      @apply lg:ml-24 text-3xl md:text-5xl 2xl:text-8xl leading-tight dark:text-slate-200;
     }
 
     .text {
-      @apply mt-2 md:mt-16 md:mr-8 text-lg text-slate-600 dark:text-gray-400;
+      @apply mt-2 md:mt-16 md:mr-8 text-lg 2xl:text-xl text-slate-600 dark:text-gray-400;
 
       .link {
         @apply text-rose-900 dark:text-cyan-200 hover:text-cyan-400 hover:underline;

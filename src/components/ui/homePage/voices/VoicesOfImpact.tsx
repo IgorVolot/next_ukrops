@@ -22,9 +22,9 @@ import img8 from '../../../../../public/homePage/respondents/img8.jpeg'
 
 const VoicesOfImpact: React.FC = () => {
     return (
-        <div className='max-h-[600px] overflow-auto'>
+        <div className={styles.mainContainer}>
             <h1 className={styles.mainTitle}>{`Voices of Impact: Hear from Those Who've Experienced Our Support`}</h1>
-            <div className={styles.mainContainer}>
+            <div className={styles.mainBlock}>
 
                 <figure className={styles.card}>
                     <blockquote className={styles.blockquote}>
