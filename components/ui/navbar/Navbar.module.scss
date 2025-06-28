@@ -10,7 +10,8 @@
 
 
 .navbar {
-  @apply flex flex-wrap justify-between items-center w-full h-20 px-4 bg-gradient-to-l text-slate-800;
+  //@apply flex flex-wrap justify-between items-center w-full h-20 px-4 bg-gradient-to-l text-slate-800;
+  @apply fixed w-full px-2 text-slate-800 bg-gradient-to-l z-30 top-0 start-0 border-b border-gray-200 dark:border-gray-600 dark:bg-gray-900;
   background-color: #8CDAEC;
 
   .logo {
@@ -18,15 +19,25 @@
   }
 
   .title {
-    @apply md:font-semibold mx-4 md:mx-10 my-auto lg:text-3xl;
+    @apply self-center lg:font-semibold whitespace-nowrap mx-4 xl:mx-10 my-auto lg:text-3xl dark:text-white;
+
   }
 
-  .linksDesktop {
-    @apply px-2 lg:px-4 cursor-pointer uppercase lg:font-medium text-slate-600 hover:scale-105 hover:text-white duration-200;
+  .linksDesktopBlock {
+    @apply flex flex-col lg:px-16 md:p-0 mt-4 rounded-lg bg-transparent md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700;
+
+    .linksDesktop {
+      @apply px-2 lg:px-4 cursor-pointer uppercase lg:text-xl text-slate-600 hover:scale-105 hover:text-white duration-200;
+    }
   }
+
 
   .linksMobile {
-    @apply flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-cyan-600 text-yellow-200 z-30;
+    @apply flex flex-col justify-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-cyan-600 text-yellow-200 z-30;
+  }
+
+  .button {
+    @apply text-gray-700 bg-slate-50 xl:w-40 border border-slate-500 hover:border-none hover:bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl px-8 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
   }
 
 }

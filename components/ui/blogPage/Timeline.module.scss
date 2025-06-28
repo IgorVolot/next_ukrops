@@ -1,0 +1,53 @@
+/*!
+ * /
+ *  *  *
+ *  *  *   *******************************************************************************
+ *  *  *   *  Copyright (c) Author: Igor Volotovskyi * 2024 * CZ IT-Design Studio GmbH. *
+ *  *  *   *******************************************************************************
+ *  *  *
+ * /
+ */
+
+
+.mainContainer {
+  @apply pt-24 pb-8 md:pt-24 md:pb-20 px-1.5 lg:px-40;
+
+  .mainTitle {
+    @apply text-center text-3xl px-6 py-8;
+  }
+
+  .mainBlock {
+    @apply bg-white flex flex-col py-4 md:py-10 ms-2 md:px-8;
+    box-shadow: 10px 10px 6px rgba(25, 75, 73, 0.22);
+    border-top: 1px groove rgba(220, 220, 220, 0.3);
+    border-left: 1px groove rgba(220, 220, 220, 0.3);
+
+    .blockContainer {
+      @apply relative border-s border-cyan-200 dark:border-gray-700;
+
+      .block {
+        @apply mb-10 ms-4 md:px-8 border-b-2 border-b-cyan-200 dark:border-gray-700;
+
+        .icon {
+          @apply absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-2 md:ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900;
+        }
+
+        .title {
+          @apply flex ms-2 items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white;
+        }
+      }
+    }
+
+    .mediaBlock {
+      @apply py-4 md:p-4 max-w-64 md:max-w-xl;
+    }
+
+    .text {
+      @apply mb-4 pr-4 text-base font-normal text-gray-500 dark:text-gray-400;
+    }
+
+    .img {
+      @apply pr-4 py-4;
+    }
+  }
+}

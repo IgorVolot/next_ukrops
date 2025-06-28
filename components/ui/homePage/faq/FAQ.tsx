@@ -169,16 +169,6 @@ const FAQ: React.FC = () => {
                             reports detailing the allocation and impact of funds are published on the charity's website
                             and are available to all stakeholders.`}
                         </p>
-                        {/*<p className={styles.answer}>However, we actually recommend using both*/}
-                        {/*    Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you*/}
-                        {/*    from using the best of two worlds.</p>*/}
-                        {/*<p className={styles.answer}>Learn more about these technologies:</p>*/}
-                        {/*<ul className="ps-5 text-gray-500 list-disc dark:text-gray-400">*/}
-                        {/*    <li><a href="https://flowbite.com/pro/"*/}
-                        {/*           className="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>*/}
-                        {/*    <li><a href="https://tailwindui.com/" rel="nofollow"*/}
-                        {/*           className="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>*/}
-                        {/*</ul>*/}
                     </div>
                 </div>
 

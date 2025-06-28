@@ -10,7 +10,7 @@
 
 
 import React from 'react';
-import Donate from "@/components/ui/donate/Donate";
+import Donate from "@/components/ui/donatePage/Donate";
 
 const Donation = () => {
     return (

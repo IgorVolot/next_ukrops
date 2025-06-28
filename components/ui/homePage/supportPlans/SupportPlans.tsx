@@ -12,8 +12,8 @@
 import React from 'react';
 import styles from "./Support.module.scss";
 import Link from "next/link";
-import {Button} from "@/components/ui/button/button";
 import Social from "@/components/ui/homePage/supportPlans/SocialIcons";
+import {Button} from "@nextui-org/react";
 
 const SupportPlans: React.FC = () => {
     return (
@@ -38,7 +38,7 @@ const SupportPlans: React.FC = () => {
                     <div>
                         <Social/>
                     </div>
-                    <Button asChild className={styles.button}>
+                    <Button className={styles.button}>
                         <Link href="/login">DONATE</Link>
                     </Button>
                 </div>
@@ -121,7 +121,7 @@ const SupportPlans: React.FC = () => {
                             <span className="text-base font-normal leading-tight text-gray-500 ms-3">Spam</span>
                         </li>
                     </ul>
-                    <Button asChild className={styles.button}>
+                    <Button className={styles.button}>
                         <Link href="/login">DONATE</Link>
                     </Button>
                 </div>
@@ -145,7 +145,7 @@ const SupportPlans: React.FC = () => {
                             </p>
                         </div>
 
-                        <Button asChild className={`${styles.button} my-4`}>
+                        <Button className={`${styles.button} my-4`}>
                             <Link href="/login">BOOK NOW</Link>
                         </Button>
 

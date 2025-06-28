@@ -12,8 +12,8 @@
 import React, {useState} from 'react';
 import styles from "./Empower.module.scss";
 import Link from "next/link";
-import {Button} from "@/components/ui/button/button";
 import {Ambulance, BriefcaseMedical, HeartPulse, Microscope} from "lucide-react";
+import {Button} from "@nextui-org/react";
 
 
 const Empower: React.FC = () => {
@@ -25,10 +25,10 @@ const Empower: React.FC = () => {
                 <h2 className="text-xl md:text-3xl">Empowering Ukrainian Medics</h2>
             </div>
             <div className="flex flex-row mt-4 md:mt-12 justify-center">
-                <Button asChild className={styles.button} >
+                <Button className={styles.button} >
                     <Link href="/login" onClick={() => setOpen(!open)}>Join Us</Link>
                 </Button>
-                <Button asChild className={`${styles.button} ml-6`} style={{backgroundColor: "#f5f5f5"}}>
+                <Button className={`${styles.button} ml-6`} style={{backgroundColor: "#f5f5f5"}}>
                     <Link href="/login" onClick={() => setOpen(!open)}>Learn More</Link>
                 </Button>
             </div>

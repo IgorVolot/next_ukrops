@@ -23,13 +23,14 @@ class Footer extends Component {
             <footer className={`${styles.footer} dark:bg-gray-900`}>
                 <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                     <div className="md:flex md:justify-between">
-                        <div className="mb-6 md:mb-0">
-                            <Link href="/home" className="flex items-center">
-                                <Image src={Logo} className=" me-3"
-                                       alt="UKROPS Logo" width={220} height={200}/>
-                                <span
-                                    className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">UKROPS Medical Charity</span>
-                            </Link>
+                        <div className="flex flex-col md:flex-row mb-6 md:mb-0">
+                            <div className="flex mx-auto">
+                                <Link href="/home" className="flex">
+                                    <Image src={Logo} className="p-4"
+                                           alt="UKROPS Logo" width={220} height={200}/>
+                                </Link>
+                            </div>
+                            <h3 className="text-center md:text-2xl md:my-auto font-semibold whitespace-nowrap dark:text-white">UKROPS Medical Charity</h3>
                         </div>
                         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                             <div>
@@ -39,7 +40,7 @@ class Footer extends Component {
 
                                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                     <li className="mb-4">
-                                        <Link href="/about" className="hover:underline">About</Link>
+                                        <Link href="/aboutPage" className="hover:underline">About</Link>
                                     </li>
                                     <li>
                                         <Link href="/blog" className="hover:underline">Blog</Link>

@@ -11,8 +11,8 @@
 'use client'
 import React, {FC, useState} from "react";
 import Link from "next/link";
-import {Button} from "@/components/ui/button/button";
 import styles from './Hero.module.scss'
+import {Button} from "@nextui-org/react";
 
 
 const HeroLeft: FC = () => {
@@ -43,7 +43,7 @@ const HeroLeft: FC = () => {
             <p className={styles.text}>
                 Join our mission to provide critical medical aid
             </p>
-            <Button asChild className={styles.button} >
+            <Button className={styles.button} >
                 <Link href="/login" onClick={() => setOpen(!open)}>Get Involved</Link>
             </Button>
         </div>

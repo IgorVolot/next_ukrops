@@ -40,7 +40,13 @@
     }
 
     .link {
-      @apply text-cyan-600 dark:text-blue-500 hover:underline;
+      text-decoration: none;
+      color: #21a9b6;
+    }
+
+    .link:hover {
+      color: maroon;
+      text-decoration: underline;
     }
   }
 

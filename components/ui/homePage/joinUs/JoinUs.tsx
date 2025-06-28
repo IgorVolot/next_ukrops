@@ -12,9 +12,9 @@
 import React, {FC, useState} from 'react';
 import styles from "@/components/ui/homePage/hero/Hero.module.scss";
 import Link from "next/link";
-import {Button} from "@/components/ui/button/button";
 import joinUs from "@/public/homePage/hero/joinUs.jpg";
 import Image from "next/image";
+import {Button} from "@nextui-org/react";
 
 const JoinUs: FC = () => {
     const [open, setOpen] = useState(true);
@@ -36,7 +36,7 @@ const JoinUs: FC = () => {
                     UKROPS Medical Charity focuses on providing essential<br/>
                     aid to Ukrainian medical professionals in need.
                 </p>
-                <Button asChild className={styles.button} style={{width:"150px"}}>
+                <Button className={styles.button} style={{width:"150px"}}>
                     <Link href="/login" onClick={() => setOpen(!open)} >Donate Now</Link>
                 </Button>
             </div>

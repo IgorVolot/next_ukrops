@@ -13,13 +13,14 @@
   @apply flex flex-col px-4 md:px-40 py-4 md:py-24 bg-white border-2 border-y-slate-200;
 
   .button {
-    @apply mt-4;
+    @apply mt-4 rounded-xl border border-slate-500;
     background-color: #8CDAEC;
     width: 150px;
   }
 
   .button:hover {
-    background-color: ghostwhite;
+    @apply bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600;
+    //background-color: ghostwhite;
     transform-style: preserve-3d;
     transition: ease-in-out 0.6s;
     scale: 1.3;
